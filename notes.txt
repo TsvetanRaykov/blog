@@ -1,16 +1,19 @@
+# https://github.com/BillRaymond/my-jekyll-docker-website#readme
 # Open folder inside container
 Ctrl + Shift + P -> Dev Containers: Open folder in Container
 
+# To install a new site
 bundle init
-
 bundle add jekyll --version "~>3.9.0"
-
 bundle exec jekyll new --force --skip-bundle .
-
 bundle add webrick
 
+# To get up and running
 bundle install
-
 bundle update
-
+#
 bundle exec jekyll serve --livereload
+#
+
+# To close connection
+Ctrl + Shift + P -> Remote: Close Remote Connection
